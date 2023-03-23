@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="painel"></p>
+
+    <button onclick="showOptions()">Options</button>
+
+    <form name="fconf" id="fconf">
+        <label>Name:</label>
+        <br>
+        <input type="text" name="fname" id="fname" size="20">
+        <br>
+        <label>Background Color</label>
+        <br>
+        <input type="radio" name="fcolorF" onclick="setColor(1, '#f00')"> Rouge
+        <br>
+        <input type="radio" name="fcolorF" onclick="setColor(1, '#0f0')"> Green
+        <br>
+        <input type="radio" name="fcolorF" onclick="setColor(1, '#00f')"> Blue
+        <br>
+        <label>Text Color</label>
+        <br>
+        <input type="radio" name="fcolorT" onclick="setColor(0, '#000')"> Black<br>
+        <input type="radio" name="fcolorT" onclick="setColor(0, '#fff')"> White<br>
+        <input type="radio" name="fcolorT" onclick="setColor(0, '#ff0')"> Yellow<br>
+        <input type="button" value="save" onclick="save()"><br>
+    </form>
+
+    <script src="data.js"></script>
+
+</body>
+</html>
